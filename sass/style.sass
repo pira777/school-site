@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500..900&display=swap')
+@import variables
+@import utilities
+
+// Main Container
+.main-container
+  position: relative
+
+  // Top Level Section 
+  .main-section
+    position: relative
+    height: 100vh
+    color: #fff
+
+    // Background Image
+    .img
+      height: 100%
+
+    // Background Overlay 
+    .overlay
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background: $ash-color-01
+
+    // Header and Section A Container 
+    .first-section
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+
+      // Section A
+      .section-a
+        max-width: 900px
+        width: 100%
+        text-align: center
+        .body
+          width: 94%
+          margin: 0 auto
+        .primary-btn
+          background: #000
+
+  // Con-Section
+  .con-section
+    .img
+      overflow: hidden
+      img
+        filter: brightness(70%)
+        transition: .5s
+      img:hover
+        filter: brightness(80%)
+        transform: scale(1.1)
+
+  // Section C
+  .section-c
+    background: #edf1ff
+
+  // Con-Header
+  .con-header
+    padding: 24px 10px
+
+  // Left
+  .left
+    a
+      margin: 0 10px
+      padding: 6px 14px
+      border-radius: .25rem
+      text-transform: uppercase
+      font-size: .94rem
+      transition: .25s
+      &.active
+        background: rgb(97 100 102)
+        padding: 6px 20px
+      &:hover
+        background: #9e9a9a
+
+  // Menu
+  .con-menu
+    i
+      display: none
+      &.active
+        display: inline-block
+
+  .con-footer
+    background: #333
+    color: #fff
+    padding: 60px 0
+
+// Media Queries
+@media (min-width:992px)
+  .main-container
+    // Section A
+    .section-a
+      .body
+        width: 100%
+
+    // Con-header
+    .con-header
+      padding: 24px 0
