@@ -5,6 +5,12 @@
 // Main Container
 .main-container
   position: relative
+  background: #fff
+  transition: .5s
+  right: 0
+
+  &.slide-left
+    right: 60%
 
   // Top Level Section 
   .main-section
@@ -16,15 +22,6 @@
     .img
       height: 100%
 
-    // Background Overlay 
-    .overlay
-      position: absolute
-      top: 0
-      left: 0
-      width: 100%
-      height: 100%
-      background: $ash-color-01
-
     // Header and Section A Container 
     .first-section
       position: absolute
@@ -34,9 +31,7 @@
 
       // Section A
       .section-a
-        max-width: 900px
-        width: 100%
-        text-align: center
+
         .body
           width: 94%
           margin: 0 auto
@@ -54,10 +49,6 @@
         filter: brightness(80%)
         transform: scale(1.1)
 
-  // Section C
-  .section-c
-    background: #edf1ff
-
   // Con-Header
   .con-header
     padding: 24px 10px
@@ -71,23 +62,83 @@
       text-transform: uppercase
       font-size: .94rem
       transition: .25s
+
       &.active
-        background: rgb(97 100 102)
+        background: #9e9a9a
         padding: 6px 20px
+
       &:hover
         background: #9e9a9a
+        color: #fff
+
+    .dropdown-menu a
+      margin: 0
+      border-radius: 0
 
   // Menu
   .con-menu
     i
       display: none
+      padding: 20px
       &.active
         display: inline-block
 
+  // Section B
+  .section-b
+    background: $light-background-color
+    .title h1
+      font-size: 1.4rem
+    .con-icon i
+      font-size: 3rem
+      margin-bottom: 1.4rem
+      color: #686868
+
+  // Section D
+  .section-d
+    background: $light-background-color
+    .carousel
+      .carousel-inner
+        width: 80%
+        margin: 0 auto
+        h2
+          font-weight: 700
+
+  // Section E
+  .section-e
+    ul
+      margin: 10px 0
+      li
+        list-style-type: disc
+
+  // Section F
+  .section-f
+    background: $light-background-color
+
+  // Footer
   .con-footer
     background: #333
     color: #fff
     padding: 60px 0
+
+// Slider
+.con-slider .slider
+  height: 100vh
+  background: #000000f0
+  width: 60%
+  position: fixed
+  top: 0
+  right: 0
+  z-index: -1
+  transition: .25s
+  animation: pull-right
+  color: rgb(201 201 201)
+  padding: 100px 20px
+  & li
+    border-bottom: 1px solid #ccc
+    padding: 12px
+    font-size: 1.2rem
+  & li.last
+    border-bottom: 0
 
 // Media Queries
 @media (min-width:992px)

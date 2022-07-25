@@ -1,0 +1,23 @@
+.overlay, .overlay-about, .overlay-home {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay-home {
+  background: rgba(0, 0, 0, 0.7019607843);
+}
+
+.overlay-about {
+  background: rgb(62, 25, 191);
+}
+
+.main-container .section-b {
+  background: #fff;
+}
+.main-container .carousel .carousel-inner .carousel-item img {
+  width: 600px;
+  height: 600px;
+}
