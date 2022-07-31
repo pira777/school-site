@@ -184,14 +184,14 @@ ul, p {
   margin-bottom: 1.4rem;
   color: #686868;
 }
-.main-container .section-d {
+.main-container .section-d, .main-container .section-i {
   background: #f7f4f4;
 }
-.main-container .section-d .carousel .carousel-inner {
+.main-container .section-d .carousel .carousel-inner, .main-container .section-i .carousel .carousel-inner {
   width: 80%;
   margin: 0 auto;
 }
-.main-container .section-d .carousel .carousel-inner h2 {
+.main-container .section-d .carousel .carousel-inner h2, .main-container .section-i .carousel .carousel-inner h2 {
   font-weight: 700;
 }
 .main-container .section-e ul, .main-container .section-e p {
@@ -200,8 +200,9 @@ ul, p {
 .main-container .section-e ul li, .main-container .section-e p li {
   list-style-type: disc;
 }
-.main-container .section-f {
-  background: #f7f4f4;
+.main-container .section-g {
+  background: #333;
+  color: #fff;
 }
 .main-container .con-footer {
   background: #333;
